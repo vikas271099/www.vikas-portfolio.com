@@ -604,7 +604,7 @@ form{
         padding: 4%;
     }    
     .section1 {
-        flex-direction: column;
+        max-height: 100vh;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./Assets/Files/IMG_8648.JPG);
 
     }
