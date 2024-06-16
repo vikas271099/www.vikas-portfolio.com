@@ -452,6 +452,7 @@ a.text-light:focus {
 } */
 
 input[type="text"],
+input[type="email"],
 textarea {
     width: 100%;
     padding: 8px;
