@@ -239,10 +239,7 @@
                     <h5 class="mb-2">
                         A Web Developer specializing in front end development
                     </h5>
-                    <span> Skilled in SharePoint Online, 
-HTML5, CSS3, JavaScript, jQuery, ReactJs. Strong 
-background in project management and customer 
-relations
+                    <span> Improved and expanded project platforms using JavaScript to develop rich User Interfaces. Communicated with product managers and UX designers to translate project requirements and business objectives into polished user interfaces. Collaborated with teammates to deliver valuable features meeting business and customer needs. Built highly functional web applications using JavaScript, HTML and CSS. #HTML5 #CSS #JavaScript #jQuery #Bootstrap #React.Js #SharePoint Online
                     </span>
 
 
@@ -278,7 +275,8 @@ relations
                 <div class="leftContact">
                     <div class="subleftContact">
                         <label class="sendMessage">Send Message</label>
-                        <form>
+                        <form  action="https://formspree.io/f/mjvnnjdy"
+                        method="POST" target="_blank" id="formid">
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -293,7 +291,7 @@ relations
                                 <textarea id="message" name="message" required rows="6"
                                     placeholder="Type your message"></textarea>
                             </div>
-                            <input class="printButton" onclick="sendTextMessage()" type="submit" value="Send">
+                            <input class="printButton" onclick="sendTextMessage" type="submit" value="Send">
                         </form>
                     </div>
 
@@ -378,6 +376,26 @@ relations
             </div>
         </section>
     </div>
+    <script>
+window.onload = function() {
+    var reloadfuntion = function() {
+       
+setTimeout(() => {
+    
+    window.location.reload();
+    console.log('Reloaded')
+}, 3000);        
+    };
+    var bindEvent = function(element, type, handler) {
+        if (element.addEventListener) {
+            element.addEventListener(type, handler, false);
+        } else {
+            element.attachEvent('on' + type, handler);
+        }
+    };
+    bindEvent(document.getElementById("formid"), "submit", reloadfuntion);
+}
+    </script>
 </body>
 
 </html>
